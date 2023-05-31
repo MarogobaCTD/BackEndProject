@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:8888}
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      allow-override: true
+      server:
+        git:
+          uri: https://github.com/MarogobaCTD/configs
