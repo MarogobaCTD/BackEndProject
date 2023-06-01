@@ -5,6 +5,7 @@ spring:
     name: config-server
   cloud:
     config:
+      allow-override: true
       server:
         git:
           uri: https://github.com/MarogobaCTD/configs

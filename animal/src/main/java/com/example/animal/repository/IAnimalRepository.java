@@ -9,7 +9,8 @@ import java.util.Optional;
 
 public interface IAnimalRepository extends JpaRepository<AnimalEntity, Long> {
 
-    List<AnimalEntity> findAnimalBySpecie(String specie);
+    String findAnimalBySpecie(String specie);
     Optional<AnimalEntity> findAnimalByName(String name);
+    List<AnimalEntity> findListAnimalBySpecie(String specie);
 
 }

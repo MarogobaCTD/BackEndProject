@@ -25,7 +25,13 @@ public class AnimalService {
 
     public String findAnimalBySpecie(String specie){
         String animalEntities;
-        animalEntities = animalRepository.findAnimalBySpecie(specie).toString();
+        animalEntities = animalRepository.findAnimalBySpecie(specie);
+        return animalEntities;
+    }
+
+    public List<AnimalEntity> findListAnimalBySpecie(String specie){
+        List<AnimalEntity> animalEntities;
+        animalEntities = animalRepository.findListAnimalBySpecie(specie);
         return animalEntities;
     }
 

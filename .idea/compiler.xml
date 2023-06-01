@@ -7,26 +7,32 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="specie" />
+        <module name="movie" />
+        <module name="eureka" />
+        <module name="catalog" />
         <module name="animal" />
         <module name="config" />
-        <module name="eureka" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="animal" target="11" />
+      <module name="catalog" target="11" />
       <module name="config" target="11" />
       <module name="eureka" target="11" />
       <module name="gateway" target="11" />
+      <module name="movie" target="11" />
       <module name="specie" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="animal" options="-parameters" />
+      <module name="catalog" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="movie" options="-parameters" />
       <module name="specie" options="-parameters" />
     </option>
   </component>

@@ -38,6 +38,16 @@ public class AnimalController {
         }
     }
 
+    @GetMapping("/list/{specie}")
+    public ResponseEntity<List<AnimalEntity>> findListAnimalBySpecie(@PathVariable String specie){
+        try{
+            List<AnimalEntity> list = animalService.findListAnimalBySpecie(specie);
+            return ResponseEntity.ok(list);
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     @GetMapping("/nome/{nome}")
     public ResponseEntity<AnimalEntity> findAnimalByNome(@PathVariable String name){
         try{
